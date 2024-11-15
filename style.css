@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/free-autumn-background-with-orange-leaves-and-space-for-text-free-image.jpeg?w=600&quality=80);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+h1{
+    color: aqua;
+}
+.box1, .box2 {
+    color: aqua;
+    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/abstract-blue-light-background_SvZPryOnfl_thumb.jpg);
+    background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(3, 224, 249, 0.2);
+    margin: 20px;
+    width: 60%;
+}
+
+.box1 {
+    height: 200px;
+}
+
+.box2 {
+    height: auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    border: none;
+    border: 1px solid rgba(6, 214, 211, 0.63);
+    border-radius: 10px;
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0044cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0022aa;
+}
+
+#show p {
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.521);
+    margin-bottom: 25px;
+
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .box1, .box2 {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box1, .box2 {
+        width: 80%;
+        height: auto;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    button {
+        margin-bottom: 10px;
+    }
+}
